@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Apple</div>
+
+
+        <div>
+            <a href="index.html">Store</a>
+            <a href="mac.html">Mac</a>
+            <a href="iPad.html">iPad</a>
+            <a href="iPhone.html">iPhone</a>
+            <a href="AppleWatch.html">Watch</a>
+            <a href="cart.html">🛒 Cart <span id="cart-count">0</span></a>
+            <a href="login.html">Sign In</a>
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <form action="#products" method="get">
+            <input type="search" name="search" placeholder="search" aria-label="search">
+            <button type="submit">search</button>
+        </form>
+    </div>
+
+    <section class="hero">
+        <h1>Store</h1>
+        <p>The best way to buy the products you love.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="products">
+        <h2>Explore our products.</h2>
+
+        <div class="product-container">
+            <div class="product-card">
+            <h3>iPhone</h3>
+            <p>Meet the latest iPhone.</p>
+            <img src="image/iphone.webp" alt="iPhone" class="product-image">
+            <button onclick="showDetails('iPhone')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Mac</h3>
+            <p>Powerful. Beautiful. Ready to work.</p>
+            <img src="image/mac.webp" alt="iPhone" class="product-image">
+            <button onclick="showDetails('Mac')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>iPad</h3>
+            <p>Your next computer is here.</p>
+            <img src="image/ipad.jpg" alt="iPhone" class="product-image">
+            <button onclick="showDetails('iPad')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Apple Watch</h3>
+            <p>A healtheir you, every day.</p>
+            <img src="image/applewatch.webp" alt="iPhone" class="product-image">
+            <button onclick="showDetails('Apple Watch')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>AirPods</h3>
+            <p>Sound that moves you.</p>
+            <img src="image/airpods.jpg" alt="iPhone" class="product-image">
+            <button onclick="showDetails('AirPods')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>HomePod</h3>
+            <p>Great sound for your home.</p>
+            <img src="image/homepod.webp" alt="iPhone" class="product-image">
+            <button onclick="showDetails('HomePod')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Apple TV 4k</h3>
+            <p>Your favourite entertainment.</p>
+            <img src="image/appletv.jpg" alt="iPhone" class="product-image">
+            <button onclick="showDetails('Apple TV 4k')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Accessories</h3>
+            <p>Find chargers, cables and more.</p>
+            <img src="image/apple-accessories.jpg" alt="iPhone" class="product-image">
+            <button onclick="showDetails('Accessories')">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Apple Pencil</h3>
+            <p>Bring your ideas to life.</p>
+            <img src="image/Apple-Pencil.jpg" alt="iPhone" class="product-image">
+            <button onclick="showDetails('Apple Pencil')">Buy</button>
+        </div>
+    </section>
+    
+        <img src="\image\18pro.png" alt="" class="mm">
+    
+
+<script src="script.js"></script>
+<div id="product-popup" class="popup">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closeDetails()">×</button>
+        <h2 id="popup-title"></h2>
+        <img id="popup-image" class="product-image" alt="Product">
+        <p id="popup-description"></p>
+        <h3 id="popup-price"></h3>
+        <button onclick="buyNow()">Buy Now</button>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<!--Apple Style footer-->
+<footer class="apple-footer">
+
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="https://www.apple.com/mac/">Mac</a>
+            <a href="https://www.apple.com/ipad/">iPad</a>
+            <a href="https://www.apple.com/iphone/">iPhone</a>
+            <a href="https://www.apple.com/watch/">Watch</a>
+            <a href="https://www.apple.com/airpods/">AirPod</a>
+            <a href="https://www.apple.com/home/">TV $ Home</a>
+            <a href="https://www.apple.com/shop/accessories/all">Accessories</a>
+            <a href="https://www.apple.com/shop/gift-cards">Gift Cards</a>
+        </div>
+
+
+
+    <div class="footer-column">
+        <h4>Entertainment</h4>
+        <a href="https://www.apple.com/apple-one/">Apple One</a>
+        <a href="https://www.apple.com/apple-tv/">Apple TV</a>
+        <a href="https://www.apple.com/apple-music/">Apple Music</a>
+        <a href="https://www.apple.com/apple-arcade/">Apple Arcade</a>
+        <a href="https://www.apple.com/apple-fitness-plus/">Apple Fitness+</a>
+        <a href="https://www.apple.com/apple-news/">Apple News+</a>
+        <a href="https://www.apple.com/apple-podcasts/">Apple Podcasts</a>
+        <a href="https://www.apple.com/apple-books/">Apple Books</a>
+    </div>
+
+    <div class="footer-column">
+        <h4>Apple Store</h4>
+        <a href="#">Find a Store</a>
+        <a href="#">Genius Bar</a>
+        <a href="#">Today at Apple</a>
+        <a href="#">Apple Camp</a>
+        <a href="#">Apple Store App</a>
+        <a href="#">Apple Upgrade</a>
+        <a href="#">Apple Trade In</a>
+        <a href="#">Certified Refurbished</a>
+        <a href="#">Finacing</a>
+        <a href="#">Carrier Deals at Apple</a>
+        <a href="#">Order Status</a>
+        <a href="#">Shopping Help</a>
+    
+
+    
+        <h4>For Business</h4>
+        <a href="#">Apple and Business</a>
+        <a href="#">Shop for Business</a>
+    </div>
+
+    <div class="footer-column">
+        <h4>For Education</h4>
+        <a href="#">Apple and Education</a>
+        <a href="#">Shop for K-12</a>
+        <a href="#">Shop for College</a>
+    
+        <h4>For Healthcare</h4>
+        <a href="#">Apple for Healthcare</a>
+    
+        <h4>For Government</h4>
+        <a href="#">Apple and Government</a>
+        <a href="#">Shop for Veterans and Military</a>
+        <a href="#">Shop for State and Local Employees</a>
+        <a href="#">Shop for Federal Employees</a>
+    </div>
+
+    <div class="footer-column">
+        <h4>Apple Values</h4>
+        <a href="#">Accessibility</a>
+        <a href="#">Education</a>
+        <a href="#">Environment</a>
+        <a href="#">Inclusion and Diversity</a>
+        <a href="#">Privacy</a>
+        <a href="#">Racial Equity and Justice</a>
+        <a href="#">Supply Chain Innovation</a>
+    </div>
+
+    <div class="footer-column">
+        <h4>About Apple</h4>
+        <a href="#">Newsroom</a>
+        <a href="#">Apple Leardership</a>
+        <a href="#">Career Opportunities</a>
+        <a href="#">Investors</a>
+        <a href="#">Ethics & Compliance</a>
+        <a href="#">Events</a>
+        <a href="#">Contact Apple</a>
+    </div>
+</footer>
+
+
+<!--footer bottom section-->
+<div class="footer-bottom">
+    
+    <div class="more-ways-shop">
+        More Ways to Shop:
+        <a href="find-store.html">Find an Apple Store</a>
+        Or
+        <a href="other-retailer.html">other retailer near you</a>
+        or call
+        <a href="tel:18006927753">1-800-MY-APPLE</a>
+        (1-800-692-7753).
+    </div>
+
+    <div class="copyright-row">
+        <span>Copyright © 2026 Apple Inc. All rights reserved.</span>
+
+        <div class="copyright-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Sales and Refund</a>
+            <span>|</span>
+            <a href="#">Legal</a>
+            <span>|</span>
+            <a href="#"> Site Map</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.navbar {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1d1d1f;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.nav-links a:hover {
+    color: #0071e3;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 20px 45px;
+}
+
+.eyebrow {
+    color: #6e6e73;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: clamp(23px, 4vw, 34px);
+    margin-bottom: 18px;
+}
+
+.hero p:last-child {
+    color: #6e6e73;
+    line-height: 1.7;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    padding: 25px 8% 70px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 22px;
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 230px;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.product-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #6e6e73;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+button {
+    background: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 27px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #005bb5;
+    transform: scale(1.04);
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    color: #6e6e73;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .hero {
+        padding: 45px 15px 30px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        padding: 20px 5% 45px;
+    }
+}

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 14px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.navbar a:hover {
+    color: #0071e3;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 20px 50px;
+}
+
+.eyebrow {
+    color: #6e6e73;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: clamp(23px, 4vw, 34px);
+    margin-bottom: 18px;
+}
+
+.description {
+    max-width: 580px;
+    margin: 0 auto 25px;
+    color: #6e6e73;
+    line-height: 1.7;
+}
+
+.watch-image {
+    display: block;
+    width: 350px;
+    max-width: 90%;
+    height: 320px;
+    object-fit: contain;
+    margin: 20px auto;
+}
+
+.hero h3 {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+button {
+    background: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #005bb5;
+    transform: scale(1.04);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 30px 8% 70px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 330px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card span {
+    font-size: 35px;
+}
+
+.feature-card h3 {
+    margin: 18px 0 12px;
+}
+
+.feature-card p {
+    color: #6e6e73;
+    line-height: 1.7;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    color: #6e6e73;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .watch-image {
+        height: 250px;
+    }
+
+    .features {
+        padding: 20px 5% 45px;
+    }
+}
